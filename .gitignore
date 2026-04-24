@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente (NUNCA commitar)
+.env
+
+# Outputs gerados pelo pipeline
+outputs/
+
+# Logs
+*.log
+
+# Sistema operacional
+desktop.ini
+.DS_Store
+Thumbs.db
+
+# Cache
+.cache/

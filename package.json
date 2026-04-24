@@ -1,0 +1,28 @@
+{
+  "name": "deploy-club-marketing-agents",
+  "version": "1.0.0",
+  "description": "Sistema de automação de conteúdo para redes sociais com IA — Deploy Club",
+  "main": "index.js",
+  "scripts": {
+    "render:ad": "node pipeline/render-ad.js",
+    "render:video": "node pipeline/render-video.js",
+    "search": "node pipeline/tavily-search.js",
+    "pipeline:run": "node pipeline/orchestrator.js",
+    "pipeline:run:payload": "node pipeline/orchestrator.js --payload",
+    "worker": "node pipeline/worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@remotion/bundler": "4.0.448",
+    "@remotion/renderer": "4.0.448",
+    "@supabase/supabase-js": "2.104.0",
+    "@tavily/core": "0.7.2",
+    "@upstash/redis": "1.37.0",
+    "bullmq": "5.75.2",
+    "dotenv": "17.4.2",
+    "playwright": "1.59.1"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(export PATH=\"/c/Program Files/nodejs:$PATH\")",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" \"h:/Meu Drive/Google Drive/Operacional - Adm/Administrativo/Claude Code/Claude - Cowork/Começando do Zero/Claude Equipe de Marketing - 6 Agentes-20260420T004308Z-3-001/Claude Equipe de Marketing - 6 Agentes/pipeline/render-video.js\")",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" install --prefix \"C:/dev/marketing-agents\" @tavily/core)",
+      "Bash(\"/c/Program Files/nodejs/node.exe\" -e \"const { tavily } = require\\('C:/dev/marketing-agents/node_modules/@tavily/core'\\); console.log\\('Tavily OK:', typeof tavily\\)\")",
+      "Bash(TAVILY_API_KEY=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 \"/c/Program Files/nodejs/node.exe\" pipeline/tavily-search.js --query \"plataforma elevatória tesoura elétrica locação 2025\" --max_results 3)",
+      "Bash(\"/c/Program Files/nodejs/npm.cmd\" install --prefix \"C:/dev/marketing-agents\" bullmq @upstash/redis @upstash/ratelimit @supabase/supabase-js dotenv)",
+      "Bash('/c/Program Files/nodejs/node.exe' -e ' *)",
+      "Bash(\"C:/Program Files/nodejs/node.exe\" pipeline/run-local.js --task-name \"foccusbr_test\" --topic \"plataforma elevatória tesoura elétrica locação Piracicaba\")",
+      "Bash(\"C:/Program Files/nodejs/node.exe\" pipeline/run-local.js --task-name \"foccusbr_test2\" --topic \"plataforma elevatória tesoura elétrica locação Piracicaba\")",
+      "Bash(npm install *)",
+      "Bash(robocopy \"H:/Meu Drive/Google Drive/Operacional - Adm/Administrativo/Claude Code/Claude - Cowork/Começando do Zero/Claude Equipe de Marketing - 6 Agentes-20260420T004308Z-3-001/Claude Equipe de Marketing - 6 Agentes\" \"C:/dev/marketing-agents\" /E /XD node_modules outputs .git /XF \"*.log\" \"desktop.ini\" /NP)",
+      "Bash(robocopy \"H:\\\\Meu Drive\\\\Google Drive\\\\Operacional - Adm\\\\Administrativo\\\\Claude Code\\\\Claude - Cowork\\\\Começando do Zero\\\\Claude Equipe de Marketing - 6 Agentes-20260420T004308Z-3-001\\\\Claude Equipe de Marketing - 6 Agentes\" \"C:\\\\dev\\\\marketing-agents\" /E /XD node_modules outputs .git /XF \"*.log\" \"desktop.ini\" /NP)"
+    ]
+  }
+}
