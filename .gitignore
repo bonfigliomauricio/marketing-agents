@@ -17,3 +17,6 @@ Thumbs.db
 
 # Cache
 .cache/
+
+# Claude Code — configurações locais (podem conter chaves e paths sensíveis)
+.claude/settings.local.json
