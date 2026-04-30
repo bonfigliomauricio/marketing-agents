@@ -1,6 +1,7 @@
 process.env.NODE_PATH = 'C:/dev/marketing-agents/node_modules';
 require('module').Module._initPaths();
 
+require('dotenv').config();
 const { tavily } = require('@tavily/core');
 
 const args = process.argv.slice(2);
