@@ -5,6 +5,7 @@ const { SceneProblem } = require('./SceneProblem');
 const { SceneSolution } = require('./SceneSolution');
 const { SceneBenefits } = require('./SceneBenefits');
 const { SceneCTA } = require('./SceneCTA');
+const { SlideshowC4Reels, SLIDE_DURATIONS } = require('./SlideshowC4Reels');
 
 const FPS = 30;
 
@@ -38,15 +39,27 @@ function FoccusBRVideo() {
   );
 }
 
+const C4_REELS_TOTAL_FRAMES = SLIDE_DURATIONS.reduce((a, b) => a + b, 0); // 1602 = 53.4s a 30fps
+
 function RemotionRoot() {
-  return React.createElement(Composition, {
-    id: 'FoccusBRVideo',
-    component: FoccusBRVideo,
-    durationInFrames: TOTAL_FRAMES,
-    fps: FPS,
-    width: 1080,
-    height: 1920,
-  });
+  return React.createElement(React.Fragment, null,
+    React.createElement(Composition, {
+      id: 'FoccusBRVideo',
+      component: FoccusBRVideo,
+      durationInFrames: TOTAL_FRAMES,
+      fps: FPS,
+      width: 1080,
+      height: 1920,
+    }),
+    React.createElement(Composition, {
+      id: 'C4BrasilInteiroReels',
+      component: SlideshowC4Reels,
+      durationInFrames: C4_REELS_TOTAL_FRAMES,
+      fps: FPS,
+      width: 1080,
+      height: 1920,
+    })
+  );
 }
 
 module.exports = { RemotionRoot };
